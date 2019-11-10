@@ -3,6 +3,6 @@
 My motivation to start this repo was the spec on the first 4 minutes of this video:
 https://www.youtube.com/watch?v=EuPSibuIKIg 
 
-which my solution is on folder solution_rectangle.
+Myy solution is on folder solutions/rectangles.
 
-Please feel free to issue PRs to add more specs for programming challenges.
+Please feel free to issue PRs other solutions or to add more specs for programming challenges.
