@@ -5,4 +5,4 @@ https://www.youtube.com/watch?v=EuPSibuIKIg
 
 which my solution is on folder solution_rectangle.
 
-Please feel free to add more specs for programming challenges.
+Please feel free to issue PRs to add more specs for programming challenges.
