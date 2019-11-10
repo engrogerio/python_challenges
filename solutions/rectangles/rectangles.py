@@ -1,10 +1,4 @@
 
-
-
-
-
-# by those points
-
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -49,6 +43,8 @@ class Rectangle:
 
 
 def get_colinear_points_dic(points):
+    # Colinear points have the same X ou Y coordinate.
+    # Returns a dictionary of colinear points for every single point given as parameter.
 
     colinear_x_points = []
     colinear_y_points = []
