@@ -1,2 +1,5 @@
 /.env
-.pyc 
+*.pyc
+*.py~
+*.un~
+*.swp 
