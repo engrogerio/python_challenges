@@ -17,6 +17,12 @@ class Point:
         # Not strictly necessary, but to avoid having both x==y and x!=y
         # True at the same time
         return not(self == other)
+    
+    def is_x_colinear(self, other):
+        return self.x == other.x
+
+    def is_y_colinear(self, other):
+        return self.y == other.y
 
 class Rectangle:
     def __init__(self, point1, point2, point3, point4):
@@ -43,6 +49,7 @@ class Rectangle:
 
 
 def get_colinear_points_dic(points):
+
     # Colinear points have the same X ou Y coordinate.
     # Returns a dictionary of colinear points for every single point given as parameter.
 
@@ -53,10 +60,10 @@ def get_colinear_points_dic(points):
     for point1 in points:
         for point2 in points:
             if point1 != point2:
-                if point1.x == point2.x:
+                if point1.is_x_colinear(point2):
                     colinear_x_points.append(point2)
         
-                if point1.y == point2.y:
+                if point1.is_y_colinear(point2):
                     colinear_y_points.append(point2)
 
         result_dic[point1] = result_dic[point1] + colinear_x_points
@@ -114,10 +121,11 @@ if __name__ == "__main__":
             Point(50, 30),
             Point(60, 10),
             Point(60, 20),
-            Point(60, 30)
+            Point(60, 30),
+            Point(30, 60)
             ]
 
     answer = get_rectangles(points)
 
     print(len(answer))
-
+    
